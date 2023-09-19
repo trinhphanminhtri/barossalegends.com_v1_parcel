@@ -1,0 +1,97 @@
+/* Media query 1170px */
+@media (max-width: 1170px) {
+  /* General */
+  .section-subtitle {
+    max-width: 60%;
+  }
+  /* Navbar Section */
+  .header {
+    .navbar {
+      background-size: cover;
+      padding: 2rem;
+      .navbar-nav {
+        margin-top: 2rem;
+        .nav-link {
+          padding: 0.2rem 0.5rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .header-right {
+        padding: 0.2rem 0.5rem;
+        span {
+          padding: 0.2rem 0.5rem;
+        }
+      }
+    }
+  }
+
+  /* Banner Section */
+}
+
+/* Media query 991px */
+@media (max-width: 991px) {
+  /* General */
+  .about .banner-section,
+  .products .banner-section,
+  .pro-detail .banner-section,
+  .gallery .banner-section,
+  .blogs .banner-section,
+  .contact .banner-section,
+  .distributors .banner-section {
+    padding-top: 12.5rem;
+    padding-bottom: 3rem;
+  }
+  /* Navbar Section */
+  // .header {
+  //   .navbar {
+  //     background-size: cover;
+  //     padding: 2rem;
+  //     .navbar-nav {
+  //       margin-top: 2rem;
+  //       .nav-link {
+  //         padding: 0.2rem 0.5rem;
+  //         margin-bottom: 1rem;
+  //       }
+  //     }
+  //     .header-right {
+  //       padding: 0.2rem 0.5rem;
+  //       span {
+  //         padding: 0.2rem 0.5rem;
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+/* Media query 767px */
+@media (max-width: 767px) {
+  /* General */
+  body,
+  html {
+    font-size: 8px;
+  }
+  .section-subtitle {
+    max-width: 80%;
+  }
+  /* Banner Section */
+  .banner-section {
+    min-height: 70vh;
+    .carousel-item {
+      height: 70vh;
+    }
+  }
+}
+
+/* Media query 590px */
+@media (max-width: 590px) {
+  /* General */
+  body,
+  html {
+    font-size: 7px;
+  }
+  /* Banner Section */
+
+  .footer-wrapper {
+    padding-top: 180px;
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "barossalegends.com",
+  "version": "1.0.0",
+  "keywords": [
+    "Food",
+    "Beverage"
+  ],
+  "author": "Anthony",
+  "license": "ISC",
+  "description": "Barossa Legend Aus Pty Ltd",
+  "scripts": {
+    "prebuild": "rimraf dist barossalegends.com .parcel-cache parcel-bundle-reports",
+    "dev": "parcel --open chrome --port 888",
+    "build": "parcel build --public-url ./ --detailed-report 100"
+  },
+  "source": [
+    "src/about.html",
+    "src/contact.html",
+    "src/gallery.html",
+    "src/index.html",
+    "src/pro-detail-body-wash-brightening.html",
+    "src/pro-detail-body-wash-invigorating.html",
+    "src/pro-detail-body-wash-moisturising.html",
+    "src/pro-detail-body-wash-nourishing.html",
+    "src/pro-detail-body-wash-refreshing.html",
+    "src/pro-detail-conditioner.html",
+    "src/pro-detail-dried-grape.html",
+    "src/pro-detail-honey-bush.html",
+    "src/pro-detail-honey-kid.html",
+    "src/pro-detail-honey-meadow.html",
+    "src/pro-detail-honey-orange.html",
+    "src/pro-detail-muesli.html",
+    "src/pro-detail-oil-250.html",
+    "src/pro-detail-oil-500.html",
+    "src/pro-detail-oil-750.html",
+    "src/pro-detail-other-products.html",
+    "src/pro-detail-roasted-salted-almonds.html",
+    "src/pro-detail-shampoo.html",
+    "src/pro-detail-wine-368.html",
+    "src/pro-detail-wine-568.html",
+    "src/pro-detail-wine-666.html",
+    "src/pro-detail-wine-888.html",
+    "src/pro-detail-wine-sparkling-dark.html",
+    "src/pro-detail-wine-sparkling-white.html",
+    "src/products.html"
+  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "default": {
+      "includeNodeModules": true,
+      "distDir": "./barossalegends.com"
+    }
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.1",
+    "jquery": "^3.7.1",
+    "lightbox2": "^2.11.4"
+  },
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.9.3",
+    "@parcel/compressor-gzip": "^2.9.3",
+    "@parcel/optimizer-cssnano": "^2.9.3",
+    "@parcel/optimizer-esbuild": "^2.9.3",
+    "@parcel/reporter-bundle-analyzer": "^2.9.3",
+    "@parcel/resolver-glob": "^2.9.3",
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4",
+    "rimraf": "^5.0.1",
+    "sharp": "^0.31.3"
+  }
+}

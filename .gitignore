@@ -1,0 +1,7 @@
+.parcel-cache
+dist
+barossalegends.com
+node_modules
+parcel-bundle-reports
+.DS_Store
+*.zip

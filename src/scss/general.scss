@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Background color */
+  // --bg-white: #fff;
+  --bg-white: #ebf1fd;
+  // --bg-dark-color: #061738;
+  --bg-dark-color: #1f4690;
+
+  /* Text colors */
+  // --primary-text: #061738;
+  // --primary-text: #0a223f;
+  --primary-text: #0f3460;
+
+  // --secondary-color: #60cd12;
+  --secondary-color: #ffe5b4;
+
+  --light-color: #e2f6de;
+
+  // --dark-color: #03262c;
+  --dark-color: #ffa500;
+
+  --text-white: #fff;
+  --text-gray: #dee2d6;
+  --text-price: #fe980f;
+  --anchor-color: #007aff;
+
+  /* Font family */
+  --primary-font: 'Barlow Condensed', sans-serif;
+  --secondary-font: 'Roboto', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+html,
+body {
+  // font-size: 16px;
+  font-size: 62.5%;
+  font-weight: 400;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  color: var(--primary-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--primary-text);
+  font-family: var(--primary-font);
+}
+
+h2 {
+  line-height: 1.2;
+  font-size: 4.7rem;
+  font-weight: 600px;
+  margin-bottom: 2rem;
+  display: inline-block;
+  color: var(--primary-text);
+  text-transform: capitalize;
+}
+
+h3 {
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 3.1rem;
+  color: var(--text-white);
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary-text);
+}
+
+h5 {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--primary-text);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: var(--primary-text);
+  font-family: var(--secondary-font);
+}
+
+embed,
+iframe,
+img,
+object {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button {
+  text-decoration: none;
+  outline: 0;
+}
+
+li a {
+  color: var(--text-white);
+}
+
+a:hover,
+button:hover {
+  transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+  // background: var(--secondary-color);
+  background: var(--dark-color);
+}

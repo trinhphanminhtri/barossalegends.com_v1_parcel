@@ -1,0 +1,49 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{zip,tgz}": [
+      "@parcel/transformer-raw"
+    ],
+    "bundle-text:*": [
+      "...",
+      "@parcel/transformer-inline-string"
+    ],
+    "data-url:*": [
+      "...",
+      "@parcel/transformer-inline-string"
+    ],
+    "blob-url:*": [
+      "...",
+      "@parcel/transformer-inline"
+    ]
+  },
+  "resolvers": [
+    "@parcel/resolver-glob",
+    "..."
+  ],
+  "optimizers": {
+    "*.js": [
+      "...",
+      "@parcel/optimizer-esbuild"
+    ],
+    "data-url:*": [
+      "...",
+      "@parcel/optimizer-data-url"
+    ],
+    "blob-url:*": [
+      "...",
+      "@parcel/optimizer-blob-url"
+    ]
+  },
+  "compressors": {
+    "*.{html,css,js,svg,map}": [
+      "...",
+      "@parcel/compressor-gzip",
+      "@parcel/compressor-brotli"
+    ]
+  },
+  "reporters": [
+    "...",
+    "@parcel/reporter-bundle-analyzer"
+  ]
+}
