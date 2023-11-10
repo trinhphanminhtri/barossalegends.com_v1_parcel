@@ -103,7 +103,10 @@ section {
   top: 2rem;
   left: 0;
   z-index: 2;
+
   .navbar {
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 10%));
+    filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 10%));
     background: url('../images/header-bg.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -498,6 +501,10 @@ section {
 }
 /*------------ gallery.html ------------*/
 /* Gallery Page */
+iframe {
+  width: 640px;
+  height: 360px !important;
+}
 .gallery {
   .gallery-section {
     h2 {
