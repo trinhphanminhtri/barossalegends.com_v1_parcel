@@ -342,6 +342,7 @@ section {
     padding: 5rem 5rem 5rem 0;
     border-radius: 0 0.5rem 0.5rem 0;
     border: 0.1rem solid transparent;
+    height: auto;
   }
   .profile-box {
     padding: 1.875rem;
@@ -439,7 +440,8 @@ section {
   }
   .form-control {
     font-size: 2rem;
-    color: var(--text-white);
+    background-color: var(--bg-white);
+    opacity: 0.5;
     &:focus {
       outline: none;
       box-shadow: none;
@@ -534,7 +536,7 @@ iframe {
 }
 .card-text {
   display: -webkit-box;
-  min-height: 4.8rem;
+  min-height: 7rem;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -545,6 +547,7 @@ iframe {
   font-size: 1.4rem;
   text-align: left;
   margin-bottom: 2rem;
+  line-clamp: 3;
 }
 /*------------ blogs.html ------------*/
 /* Blog Page */
